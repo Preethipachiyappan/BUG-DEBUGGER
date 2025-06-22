@@ -1,0 +1,10 @@
+def calculate_area(radius):
+    pi = 3.14
+    area = pi * radius * radius
+    return area
+
+print("Enter the radius: ")
+r = input()  # Missing type conversion
+
+result = calculate_area(r)  # TypeError: string * string is not valid
+print("The area of the circle is: " + result)  # TypeError: cannot concatenate str and float
